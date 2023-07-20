@@ -1,3 +1,22 @@
+//arrow function in class
+class MyClass {
+    constructor() {
+      this.name = "Shiwam";
+    }
+
+    sayHello = () => {
+      console.log("Hello, " + this.name);
+    }
+  
+    sayBye = () => {
+        console.log("Bye, " + this.name);
+    };
+}
+const myObj = new MyClass();
+myObj.sayHello();   
+myObj.sayBye(); 
+
+
 //generator function: syntax <function* function name>
 //this function allow us to hold and resume the function execution.
 function* incre(){
